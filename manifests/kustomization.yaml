@@ -1,4 +1,5 @@
 resources:
+- databases.example.com_mariadbs.yaml
 - deployment.yaml
 
 #oc patch console.operator/cluster --type=merge -p '{"spec":{"plugins":["console-demo-plugin"]}}'

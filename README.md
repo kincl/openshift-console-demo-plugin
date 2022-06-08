@@ -34,11 +34,13 @@ on how to run Bridge using local plugins.
 
 ## Deployment on cluster
 
+Requires minimum OpenShift 4.10
+
 Console dynamic plugins are supposed to be deployed via [OLM operators](https://github.com/operator-framework).
 In case of demo plugin, we just apply a minimal OpenShift manifest which adds the necessary resources.
 
 ```sh
-oc apply -f oc-manifest.yaml
+oc apply -k manifests
 ```
 
 Note that the `Service` exposing the HTTP server is annotated to have a signed
