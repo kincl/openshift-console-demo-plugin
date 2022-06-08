@@ -1,0 +1,15 @@
+resources:
+- deployment.yaml
+
+#oc patch console.operator/cluster --type=merge -p '{"spec":{"plugins":["console-demo-plugin"]}}'
+
+patches:
+- patch: |-
+    - op: add
+      path: /spec/plugins/-
+      value: console-demo-plugin 
+  target:
+    group: operator.openshift.io
+    version: v1
+    kind: Console
+    name: cluster

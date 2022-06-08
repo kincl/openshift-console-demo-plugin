@@ -49,9 +49,6 @@
     },
     "dependencies": {
       "@console/pluginAPI": "*"
-    },
-    "disableStaticPlugins": [
-      "@console/demo-plugin"
-    ]
+    }
   }
 }
