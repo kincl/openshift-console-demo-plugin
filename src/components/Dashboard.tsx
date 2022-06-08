@@ -98,7 +98,7 @@ const MyTable: React.FC<PodsTableProps> = ({
   );
 };
 
-export const MyLandingPage: React.FC<{ title: string }> = ({ title }) => {
+export const Dashboard: React.FC<{ title: string }> = ({ title }) => {
   const [dbs, loaded, loadError] = useK8sWatchResource<K8sResourceCommon[]>({
     groupVersionKind: mysqlGVK,
     isList: true,
@@ -256,4 +256,4 @@ export const MyLandingPage: React.FC<{ title: string }> = ({ title }) => {
   );
 };
 
-export default MyLandingPage;
+export default Dashboard;

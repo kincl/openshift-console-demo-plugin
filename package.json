@@ -44,7 +44,7 @@
     "description": "Plasma reactors online. Initiating hyper drive.",
     "exposedModules": {
       "perspective": "./utils/perspective",
-      "landingPage": "./components/LandingPage",
+      "dashboard": "./components/Dashboard",
       "mysqlDetails": "./components/MySQLDetails"
     },
     "dependencies": {

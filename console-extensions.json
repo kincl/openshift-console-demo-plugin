@@ -2,7 +2,7 @@
   {
     "type": "console.perspective",
     "properties": {
-      "id": "demo",
+      "id": "databases",
       "name": "Databases",
       "icon": { "$codeRef": "perspective.icon" },
       "landingPageURL": { "$codeRef": "perspective.getLandingPageURL" },
@@ -12,42 +12,42 @@
   {
     "type": "console.navigation/section",
     "properties": {
-      "id": "demo-home",
-      "perspective": "demo",
+      "id": "databases-home",
+      "perspective": "databases",
       "name": "Home"
     }
   },
   {
     "type": "console.navigation/section",
     "properties": {
-      "id": "demo-workloads",
-      "perspective": "demo",
+      "id": "databases-workloads",
+      "perspective": "databases",
       "name": "Workloads"
     }
   },
   {
     "type": "console.page/route",
     "properties": {
-      "path": "/myLandingPage",
-      "component": { "$codeRef": "landingPage" }
+      "path": "/databases",
+      "component": { "$codeRef": "dashboard" }
     }
   },
   {
     "type": "console.navigation/href",
     "properties": {
-      "id": "demo-list-databases",
-      "perspective": "demo",
-      "section": "demo-home",
+      "id": "databases-list-databases",
+      "perspective": "databases",
+      "section": "databases-home",
       "name": "Dashboard",
-      "href": "/myLandingPage"
+      "href": "/databases"
     }
   },
   {
     "type": "console.navigation/resource-cluster",
     "properties": {
       "id": "mysqls",
-      "perspective": "demo",
-      "section": "demo-workloads",
+      "perspective": "databases",
+      "section": "databases-workloads",
       "name": "MySQLs",
       "model": {
         "group": "databases.example.com",
