@@ -6,7 +6,6 @@
     "clean": "rm -rf dist",
     "build": "yarn clean && NODE_ENV=production yarn ts-node node_modules/.bin/webpack",
     "build-dev": "yarn clean && yarn ts-node node_modules/.bin/webpack",
-    "build-plugin-sdk": "yarn --cwd ../frontend build-plugin-sdk && rm -rf node_modules/@openshift-console && yarn install --check-files",
     "http-server": "./http-server.sh dist",
     "i18n": "i18next \"src/**/*.{js,jsx,ts,tsx}\" [-oc] -c i18next-parser.config.js",
     "ts-node": "ts-node -O '{\"module\":\"commonjs\"}'"
@@ -44,18 +43,9 @@
     "displayName": "Console Demo Plugin",
     "description": "Plasma reactors online. Initiating hyper drive.",
     "exposedModules": {
-      "exampleNavs": "./utils/example-navs",
-      "barUtils": "./utils/bar",
       "perspective": "./utils/perspective",
-      "telemetry": "./utils/telemetry",
-      "extensionConsumer": "./components/ExtensionConsumer",
-      "utilityConsumer": "./components/UtilityConsumer",
-      "exampleProxyPage": "./components/ExampleProxyPage",
-      "K8sAPIConsumer": "./components/k8sConsumer/K8sAPIConsumer",
-      "navPage": "./components/Nav",
-      "listPage": "./components/ListPage",
-      "projectTabContent": "./components/ProjectTabExtensionContent",
-      "landingPage": "./components/LandingPage"
+      "landingPage": "./components/LandingPage",
+      "mysqlDetails": "./components/MySQLDetails"
     },
     "dependencies": {
       "@console/pluginAPI": "*"
