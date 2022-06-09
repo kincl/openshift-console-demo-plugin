@@ -1,11 +1,12 @@
 # OpenShift Console Demo Plugin
 
-This project emulates a standalone repository hosting a sample
+This project tests creating a new perspective in the OpenShift Console
+and displaying relevant information about a dummy MySQL custom resource.
+
+![screenshot](/screenshot.png)
+
+It is forked from a sample
 [dynamic plugin](/frontend/packages/console-dynamic-plugin-sdk/README.md) for OpenShift Console.
-
-It is meant to serve as a reference for Console plugin developers and for testing dynamic plugin
-capabilities via end-to-end tests.
-
 ## Local development
 
 1. `yarn build` to build the plugin, generating output to `dist` directory
